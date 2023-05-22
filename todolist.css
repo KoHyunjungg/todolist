@@ -1,0 +1,106 @@
+*{font-family: 'Noto Sans KR', sans-serif;}
+
+
+#body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    font-family: 'Tilt Warp', cursive;
+    display: block;
+    text-align: center;
+    color: #3C486B;
+    font-size: 50px;
+    font-weight: 600;
+    background-color: #F0F0F0;
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
+#current_date {
+    font-family: 'Tilt Warp', cursive;
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3C486B;
+    background-color: #F0F0F0;
+   
+}
+
+input[type=text] {
+    width: 60%;
+    text-align: left;
+    height: 30px;
+}
+
+
+#submit {
+    color: #F0F0F0;
+    background-color: #3C486B;
+    border-style: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 32px;
+    width: 43px;
+}
+
+#submit:hover {
+    background-color: #F9D949;
+}
+
+#todo-form {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-size: 20px;
+    background-color: #F0F0F0;
+}
+
+#todo-list {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-style: none;
+    font-size: 15px;
+    line-height: 40px;
+    color: black;
+    background-color: #F0F0F0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    list-style: none;
+    
+}
+
+button {
+    margin-left: 10px;
+    background-color: #F45050;
+    color: #F0F0F0;
+    border-style: none;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #F9D949;
+}
+
+
+
+
