@@ -7,6 +7,7 @@
     margin-right: auto;
 }
 
+
 #title {
     font-family: 'Tilt Warp', cursive;
     display: block;
@@ -35,26 +36,8 @@
    
 }
 
-input[type=text] {
-    width: 60%;
-    text-align: left;
-    height: 30px;
-}
 
-
-#submit {
-    color: #F0F0F0;
-    background-color: #3C486B;
-    border-style: none;
-    border-radius: 3px;
-    box-sizing: border-box;
-    height: 32px;
-    width: 43px;
-}
-
-#submit:hover {
-    background-color: #F9D949;
-}
+/* todo-form */
 
 #todo-form {
     display: block;
@@ -68,37 +51,87 @@ input[type=text] {
     font-size: 20px;
     background-color: #F0F0F0;
 }
+input[type=text] {
+    width: 60%;
+    text-align: left;
 
-#todo-list {
-    display: block;
-    align-items: center;
-    text-align: center;
-    font-style: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#submit {
+    color: #F0F0F0;
+    background-color: #3C486B;
+    border: 0.5px solid #3C486B;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 15px;
-    line-height: 40px;
-    color: black;
+}
+
+#submit:hover {
+    background-color: #F9D949;
+    border: 0.5px solid #F9D949;
+}
+
+
+
+/* todo-list */
+#todo-list {
+    text-align: center;
+    align-items: center;
+    font-style: none;
+    line-height: 50px;
     background-color: #F0F0F0;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
     padding-top: 30px;
     padding-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: auto;
+    padding-right: auto;
     list-style: none;
-    
 }
 
-button {
-    margin-left: 10px;
+
+#newTodo_text {
+    color: #3C486B;
+    text-align: left;
+    font-size: 15px;
+    border: 0.5px solid #3C486B;
+    border-radius: 3px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#newTodo_delete {
     background-color: #F45050;
     color: #F0F0F0;
-    border-style: none;
+    border: 0.5px solid #F45050;
     border-radius: 3px;
+    text-align: right;
+    font-size: 15px;
+    margin-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-button:hover {
+#newTodo_delete:hover {
     background-color: #F9D949;
+    border: 0.5px solid #F9D949;
 }
 
 
