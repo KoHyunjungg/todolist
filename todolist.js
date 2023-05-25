@@ -34,29 +34,27 @@ function deleteToDo (event) {
 function paintToDo(newTodo) {
     const li = document.createElement("li");
     li.id = newTodo.id;
-    const span = document.createElement("span");
-    span.innerText = newTodo.text;
-    span.id = "newTodo_text";
+    const input = document.createElement("span");
+    input.innerText = newTodo.text;
+    input.id = "newTodo_text";
     const button = document.createElement("button");
-    button.innerText = "Delete";
+    button.innerText = "X";
     button.id = "newTodo_delete";
     button.addEventListener("click", deleteToDo);
-
-    li.appendChild(span); //li는 span이라는 자식을 갖게 됨
+    li.appendChild(input); //li는 span이라는 자식을 갖게 됨
     li.appendChild(button);
     toDoList.appendChild(li);
 
+    //모두삭제
+    const span = document.getElementById("delete_all");
+    span.addEventListener("click", deleteAllToDo);
+    toDoList.appendChild(span);
+    
 }
 
-// 모두삭제
-
-const button = document.getElementById("delete_all");
-button.addEventListener("click", deleteAllToDo);
-toDoList.appendChild(button);
 
 function deleteAllToDo (event) {
     const li = event.target.parentElement;
-    //target은 클릭된 html요소, parentElement는 클릭된 요소의 부모
     li.remove();
     toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
     saveToDos();
